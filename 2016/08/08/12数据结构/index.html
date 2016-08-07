@@ -1,0 +1,588 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="数据结构
+程序设计=数据结构+算法 
+
+逻辑机构和物理结构传统上，我们把数据结构分为逻辑机构和物理结构。逻辑结构:是指数据对象中数据元素之间的相互关系。物理结构:是指数据的逻辑结构在计算机中的存储形式。 
+四大逻辑结构集合结构没有不三不四的关系
+线性结构一对一
+树形结构一对多的层次关系
+图形结构多对多的关系
+物理结构顺序存储:把数据元素存放在地址连续的存储单元里链式存储:把数据元素存放在任意的存储">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Alucardlockon's Code Space">
+<meta property="og:url" content="http://yoursite.com/2016/08/08/12数据结构/index.html">
+<meta property="og:site_name" content="Alucardlockon's Code Space">
+<meta property="og:description" content="数据结构
+程序设计=数据结构+算法 
+
+逻辑机构和物理结构传统上，我们把数据结构分为逻辑机构和物理结构。逻辑结构:是指数据对象中数据元素之间的相互关系。物理结构:是指数据的逻辑结构在计算机中的存储形式。 
+四大逻辑结构集合结构没有不三不四的关系
+线性结构一对一
+树形结构一对多的层次关系
+图形结构多对多的关系
+物理结构顺序存储:把数据元素存放在地址连续的存储单元里链式存储:把数据元素存放在任意的存储">
+<meta property="og:updated_time" content="2016-08-01T12:38:43.806Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Alucardlockon's Code Space">
+<meta name="twitter:description" content="数据结构
+程序设计=数据结构+算法 
+
+逻辑机构和物理结构传统上，我们把数据结构分为逻辑机构和物理结构。逻辑结构:是指数据对象中数据元素之间的相互关系。物理结构:是指数据的逻辑结构在计算机中的存储形式。 
+四大逻辑结构集合结构没有不三不四的关系
+线性结构一对一
+树形结构一对多的层次关系
+图形结构多对多的关系
+物理结构顺序存储:把数据元素存放在地址连续的存储单元里链式存储:把数据元素存放在任意的存储">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/08/08/12数据结构/"/>
+
+  <title>  | Alucardlockon's Code Space </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Alucardlockon's Code Space</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-08T02:17:37+08:00" content="2016-08-08">
+              2016-08-08
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><blockquote>
+<p>程序设计=数据结构+算法 </p>
+</blockquote>
+<h3 id="逻辑机构和物理结构"><a href="#逻辑机构和物理结构" class="headerlink" title="逻辑机构和物理结构"></a>逻辑机构和物理结构</h3><p>传统上，我们把数据结构分为逻辑机构和物理结构。<br>逻辑结构:是指数据对象中数据元素之间的相互关系。<br>物理结构:是指数据的逻辑结构在计算机中的存储形式。 </p>
+<h4 id="四大逻辑结构"><a href="#四大逻辑结构" class="headerlink" title="四大逻辑结构"></a>四大逻辑结构</h4><h5 id="集合结构"><a href="#集合结构" class="headerlink" title="集合结构"></a>集合结构</h5><p>没有不三不四的关系</p>
+<h5 id="线性结构"><a href="#线性结构" class="headerlink" title="线性结构"></a>线性结构</h5><p>一对一</p>
+<h5 id="树形结构"><a href="#树形结构" class="headerlink" title="树形结构"></a>树形结构</h5><p>一对多的层次关系</p>
+<h5 id="图形结构"><a href="#图形结构" class="headerlink" title="图形结构"></a>图形结构</h5><p>多对多的关系</p>
+<h4 id="物理结构"><a href="#物理结构" class="headerlink" title="物理结构"></a>物理结构</h4><p>顺序存储:把数据元素存放在地址连续的存储单元里<br>链式存储:把数据元素存放在任意的存储单元里，这些存储单元可以是连续的，也可以是不连续的。 </p>
+<h3 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h3><p>输入:算法具有零个或多个输入<br>输出:至少有一个或多个输出 </p>
+<p>有穷性:<br>算法在执行有限的步骤之后，自动结束<br>确定性:<br>算法的每个步骤都有确定的含义，有唯一的输出结构，每个步骤都应该明确不能有歧义 </p>
+<p>算法不是唯一的，同一个问题，可以有多种解决问题的算法。 </p>
+<h4 id="正确性"><a href="#正确性" class="headerlink" title="正确性"></a>正确性</h4><ul>
+<li>程序没有语法错误</li>
+<li>算法程序对于合法输入能够产生满足要求的输出</li>
+<li>算法程序对于非法输入能够产生满足规格的说明 </li>
+<li>算法程序对于故意刁难的测试输入都有满足要求的输出结果(高阶) </li>
+</ul>
+<p>可读性:<br>便于阅读，理解和交流<br>健壮性:<br>输入数据不合法时，能做出相关处理<br>时间效率高和存储量低:</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/08/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/08/exatom/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Alucardlockon" />
+          <p class="site-author-name" itemprop="name">Alucardlockon</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据结构"><span class="nav-number">1.</span> <span class="nav-text">数据结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#逻辑机构和物理结构"><span class="nav-number">1.0.1.</span> <span class="nav-text">逻辑机构和物理结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#四大逻辑结构"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">四大逻辑结构</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#集合结构"><span class="nav-number">1.0.1.1.1.</span> <span class="nav-text">集合结构</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#线性结构"><span class="nav-number">1.0.1.1.2.</span> <span class="nav-text">线性结构</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#树形结构"><span class="nav-number">1.0.1.1.3.</span> <span class="nav-text">树形结构</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#图形结构"><span class="nav-number">1.0.1.1.4.</span> <span class="nav-text">图形结构</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#物理结构"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">物理结构</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#算法"><span class="nav-number">1.0.2.</span> <span class="nav-text">算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#正确性"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">正确性</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Alucardlockon</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

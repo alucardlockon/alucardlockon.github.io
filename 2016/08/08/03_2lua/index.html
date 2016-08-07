@@ -1,0 +1,596 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="Lua中文手册  
+交互模式进入：lua  
+参数-i：进入交互模式dofile(“name”) 可交互模式测试代码-l：加载一个文件-e：直接传命令至luaargs变量:参数
+语法helloword‘print(hello,world)’注释 –变量 a=10删除变量 a=nil==相等~=不相等逻辑运算 and / or / not..连接运算  “aa”..”bb” –&amp;gt; “aabb”">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Alucardlockon's Code Space">
+<meta property="og:url" content="http://yoursite.com/2016/08/08/03_2lua/index.html">
+<meta property="og:site_name" content="Alucardlockon's Code Space">
+<meta property="og:description" content="Lua中文手册  
+交互模式进入：lua  
+参数-i：进入交互模式dofile(“name”) 可交互模式测试代码-l：加载一个文件-e：直接传命令至luaargs变量:参数
+语法helloword‘print(hello,world)’注释 –变量 a=10删除变量 a=nil==相等~=不相等逻辑运算 and / or / not..连接运算  “aa”..”bb” –&amp;gt; “aabb”">
+<meta property="og:updated_time" content="2016-08-01T12:38:43.799Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Alucardlockon's Code Space">
+<meta name="twitter:description" content="Lua中文手册  
+交互模式进入：lua  
+参数-i：进入交互模式dofile(“name”) 可交互模式测试代码-l：加载一个文件-e：直接传命令至luaargs变量:参数
+语法helloword‘print(hello,world)’注释 –变量 a=10删除变量 a=nil==相等~=不相等逻辑运算 and / or / not..连接运算  “aa”..”bb” –&amp;gt; “aabb”">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/08/08/03_2lua/"/>
+
+  <title>  | Alucardlockon's Code Space </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Alucardlockon's Code Space</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-08T02:17:37+08:00" content="2016-08-08">
+              2016-08-08
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Lua"><a href="#Lua" class="headerlink" title="Lua"></a>Lua</h1><p><a href="http://manual.luaer.cn/" target="_blank" rel="external">中文手册</a>  </p>
+<h3 id="交互模式"><a href="#交互模式" class="headerlink" title="交互模式"></a>交互模式</h3><p>进入：lua  </p>
+<h4 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h4><p>-i：进入交互模式<br>dofile(“name”) 可交互模式测试代码<br>-l：加载一个文件<br>-e：直接传命令至lua<br>args变量:参数</p>
+<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><p>helloword<br>‘print(hello,world)’<br>注释 –<br>变量 a=10<br>删除变量 a=nil<br>==相等<br>~=不相等<br>逻辑运算 and / or / not<br>..连接运算  “aa”..”bb” –&gt; “aabb”<br>局部变量 local<br>句末的;可加可不加  </p>
+<h4 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h4><p>使用do…end来包围代码以在交互模式下运行</p>
+<h4 id="if判断-if-elseif-else-end"><a href="#if判断-if-elseif-else-end" class="headerlink" title="if判断 if elseif else end.."></a>if判断 if elseif else end..</h4><figure class="highlight lua"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> i&gt;<span class="number">20</span> <span class="keyword">then</span></div><div class="line">  <span class="keyword">local</span> a</div><div class="line">  a=<span class="number">20</span></div><div class="line"><span class="keyword">else</span></div><div class="line">  a=<span class="number">0</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<h4 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h4><figure class="highlight lua"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> a <span class="keyword">in</span> <span class="built_in">io</span>.lines() <span class="keyword">do</span></div><div class="line">  list=&#123;<span class="built_in">next</span>=list,value=a&#125;</div><div class="line"><span class="keyword">end</span></div><div class="line"></div><div class="line"><span class="keyword">while</span> a&gt;<span class="number">1</span> <span class="keyword">do</span></div><div class="line">  a<span class="comment">--;</span></div><div class="line"><span class="keyword">end</span></div><div class="line"></div><div class="line"><span class="keyword">repeat</span></div><div class="line">  a++;</div><div class="line"><span class="keyword">until</span> a&gt;<span class="number">1</span>;</div><div class="line"></div><div class="line"><span class="comment">--for第三个参数step可省略,默认1</span></div><div class="line"><span class="keyword">for</span> a=<span class="number">1</span>,<span class="number">10</span>,<span class="number">1</span> <span class="keyword">do</span></div><div class="line">  <span class="built_in">print</span>(a)</div><div class="line"><span class="keyword">end</span></div><div class="line"><span class="comment">--范型for循环</span></div><div class="line"><span class="keyword">for</span> a <span class="keyword">in</span> tb1 <span class="keyword">do</span> <span class="built_in">print</span>(a) <span class="keyword">end</span></div></pre></td></tr></table></figure>
+<p>break:退出循环<br>iparis(table)遍历</p>
+<h4 id="require"><a href="#require" class="headerlink" title="require"></a>require</h4><p>加载运行库</p>
+<h4 id="错误-error-“my-error”"><a href="#错误-error-“my-error”" class="headerlink" title="错误 error(“my error”)"></a>错误 error(“my error”)</h4><p>debug库可收集错误信息<br>debug.debug:给出lua的提示符<br>debug,traceback:给出更多的错误信息</p>
+<h3 id="基本变量类型"><a href="#基本变量类型" class="headerlink" title="基本变量类型"></a>基本变量类型</h3><ol>
+<li>nil  </li>
+<li>boolean(true,false)</li>
+<li>number<br>lua没有整数,number表示实数，无需担心误差</li>
+<li>string</li>
+<li>userdata<br>userdata可以将C数据放在lua变量中</li>
+<li>function<br>函数</li>
+<li>thread</li>
+<li>table<br>创建表  <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">tb1=&#123;"cell1","cell2","cell3"&#125;</div><div class="line">```  </div><div class="line"></div><div class="line">weak table:(\_\_mode=\"k(key) or v(value)\")会被lua内存垃圾回收收集</div><div class="line">type(变量):测试函数类型</div><div class="line">字符串和数字运算时自动转换成string</div><div class="line">### 保留字</div><div class="line">&gt; and break do else</div><div class="line">elseif end false for</div><div class="line">function if in local</div><div class="line">nil not or repeat</div><div class="line">return then true until</div><div class="line">while</div><div class="line"></div><div class="line">### 函数</div><div class="line">``` lua</div><div class="line">function func_name(args)</div><div class="line">  xxx;</div><div class="line">end;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>当函数只有一个参数，且是字符串或表构造函数，则无需使用()来调用函数:<br><figure class="highlight lua"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">print</span> <span class="string">"Lua"</span>;</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>lua使用的函数也可以是其他语言编写的  </p>
+</blockquote>
+<p>Lua函数可以有多个返回值<br><code>retun para1,para2;</code><br>可变参数:f(unpack(a)):unpack返回a所有的元素作为f的参数<br>…:表示参数<br><figure class="highlight lua"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">a</span><span class="params">(...)</span></span></div><div class="line">  <span class="keyword">for</span> a <span class="keyword">in</span> <span class="built_in">ipairs</span>(arg) <span class="keyword">do</span></div><div class="line">    xxx</div><div class="line">  <span class="keyword">end</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure></p>
+<p>_,x=strinig.find(a,b) 哑元(只返回第二个参数)<br><figure class="highlight lua"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Go</span><span class="params">(opts)</span></span></div><div class="line">  xxx;</div><div class="line">  _Go(opts.x <span class="keyword">or</span> <span class="number">0</span>,opts.y <span class="keyword">or</span> <span class="number">0</span>)</div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure></p>
+<h4 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h4><p><code>print(function(a) xxx end)</code></p>
+<h3 id="协同"><a href="#协同" class="headerlink" title="协同"></a>协同</h3><p>协同有三个状态挂起态(suspended),运行态(runnig),停止态（dead）,create时为挂起，调用resume(co)后为运行态，完成后，dead<br><figure class="highlight lua"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">co=<span class="built_in">coroutine</span>.create(</div><div class="line">  <span class="function"><span class="keyword">function</span> <span class="params">()</span></span> <span class="built_in">print</span> <span class="string">"1"</span>; <span class="keyword">end</span>;</div><div class="line">  )</div></pre></td></tr></table></figure></p>
+<p>yield()函数能挂起</p>
+<h3 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h3><figure class="highlight lua"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Account=&#123;balance=<span class="number">0</span>&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Account.withdraw</span><span class="params">(self/this(可隐藏)</span></span>,v)</div><div class="line">  self.balance=Account.balance-v</div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<h4 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h4><p><code>VipAccount=Account:new()</code>  </p>
+<h3 id="标准库"><a href="#标准库" class="headerlink" title="标准库"></a>标准库</h3><h4 id="数学库math"><a href="#数学库math" class="headerlink" title="数学库math"></a>数学库math</h4><p>math: sin/rad/deg…<br>math.randomseed(os.time()) //避免重复随机数  </p>
+<h4 id="Table库"><a href="#Table库" class="headerlink" title="Table库"></a>Table库</h4><p>table.getn():返回table大小<br>setn():设置table大小<br>insert()/remove()<br>sort()  </p>
+<h4 id="String库"><a href="#String库" class="headerlink" title="String库"></a>String库</h4><p>upper(“”)/lower(s)<br>len(s)<br>rep(s,n) –返回重复n次字符串s的值<br>sub()<br>char()/byte() 转换<br>format(“%d”,s) 格式化字符串<br>find(s,”abc”) 查找abc,第二个参数能使用修饰模式(+-*\?)<br>gsub()  </p>
+<h4 id="IO库"><a href="#IO库" class="headerlink" title="IO库"></a>IO库</h4><p>io.write(“”)/io.read(“*all”)<br>io.lines()<br>io.open(“/etc/aaaa”,”w/r”(二进制:wb,rb))</p>
+<h4 id="系统库"><a href="#系统库" class="headerlink" title="系统库"></a>系统库</h4><p>os.rename() 修改文件名<br>os.remove() 删除文件<br>os.time()/os.date()<br>os.getenv(“HOME”) 环境变量<br>os.execute(“dir”) 执行系统命令<br>os.setlocale(“GBK”,”xxx”) 设置地区特性  </p>
+<h4 id="Debug库"><a href="#Debug库" class="headerlink" title="Debug库"></a>Debug库</h4><p>debug.info 自省函数<br>debug.traceback()<br>debug.setlocal/getlocal 设置/获取一个局部变量<br>debug.getupvalue(func,i) 获取upvalue级别  </p>
+<h5 id="Hooks-跟踪器"><a href="#Hooks-跟踪器" class="headerlink" title="Hooks 跟踪器"></a>Hooks 跟踪器</h5><p>debug.sethook(print,”999”)  </p>
+<h3 id="C-API"><a href="#C-API" class="headerlink" title="C API"></a>C API</h3><p>C API是一个C代码与Lua进行交互的函数集<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;lua.h&gt;</span>  <span class="comment">//LUA基础函数</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;luaxlib.h&gt;</span> <span class="comment">//辅助库</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;lualib.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span>&#123;</div><div class="line">  <span class="keyword">int</span> a=<span class="number">0</span>;</div><div class="line">  lua_State \*L=lua_open();</div><div class="line">  luaopen_base(L);</div><div class="line">  luaopen_table(L);</div><div class="line">  luaopen_string(L);</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h4 id="读取配置文件"><a href="#读取配置文件" class="headerlink" title="读取配置文件"></a>读取配置文件</h4><p>height=1000<br>lua_getglobal(L,”width”);</p>
+<h4 id="调用lua函数"><a href="#调用lua函数" class="headerlink" title="调用lua函数"></a>调用lua函数</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> a=<span class="number">1</span>;</div><div class="line">lua_getglobal(L,<span class="string">"func"</span>);</div><div class="line">lua_pushnumber(L,x);</div></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/08/03_1c/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/08/04nodejs/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Alucardlockon" />
+          <p class="site-author-name" itemprop="name">Alucardlockon</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Lua"><span class="nav-number">1.</span> <span class="nav-text">Lua</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#交互模式"><span class="nav-number">1.0.1.</span> <span class="nav-text">交互模式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#参数"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">参数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#语法"><span class="nav-number">1.0.2.</span> <span class="nav-text">语法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#代码块"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">代码块</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#if判断-if-elseif-else-end"><span class="nav-number">1.0.2.2.</span> <span class="nav-text">if判断 if elseif else end..</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#循环"><span class="nav-number">1.0.2.3.</span> <span class="nav-text">循环</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#require"><span class="nav-number">1.0.2.4.</span> <span class="nav-text">require</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#错误-error-“my-error”"><span class="nav-number">1.0.2.5.</span> <span class="nav-text">错误 error(“my error”)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本变量类型"><span class="nav-number">1.0.3.</span> <span class="nav-text">基本变量类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#匿名函数"><span class="nav-number">1.0.3.1.</span> <span class="nav-text">匿名函数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#协同"><span class="nav-number">1.0.4.</span> <span class="nav-text">协同</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#面向对象"><span class="nav-number">1.0.5.</span> <span class="nav-text">面向对象</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#继承"><span class="nav-number">1.0.5.1.</span> <span class="nav-text">继承</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标准库"><span class="nav-number">1.0.6.</span> <span class="nav-text">标准库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数学库math"><span class="nav-number">1.0.6.1.</span> <span class="nav-text">数学库math</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Table库"><span class="nav-number">1.0.6.2.</span> <span class="nav-text">Table库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#String库"><span class="nav-number">1.0.6.3.</span> <span class="nav-text">String库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#IO库"><span class="nav-number">1.0.6.4.</span> <span class="nav-text">IO库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#系统库"><span class="nav-number">1.0.6.5.</span> <span class="nav-text">系统库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Debug库"><span class="nav-number">1.0.6.6.</span> <span class="nav-text">Debug库</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Hooks-跟踪器"><span class="nav-number">1.0.6.6.1.</span> <span class="nav-text">Hooks 跟踪器</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C-API"><span class="nav-number">1.0.7.</span> <span class="nav-text">C API</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#读取配置文件"><span class="nav-number">1.0.7.1.</span> <span class="nav-text">读取配置文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#调用lua函数"><span class="nav-number">1.0.7.2.</span> <span class="nav-text">调用lua函数</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Alucardlockon</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
