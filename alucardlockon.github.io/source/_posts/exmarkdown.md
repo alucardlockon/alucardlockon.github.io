@@ -1,3 +1,7 @@
+---
+title: 其他.Markdown笔记
+---
+
 # Markdown语法
 [中文手册](http://www.appinn.com/markdown/)
 #### 标题

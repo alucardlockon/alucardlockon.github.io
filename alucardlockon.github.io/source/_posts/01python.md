@@ -1,3 +1,7 @@
+---
+title: 01.Python笔记
+---
+
 # Python
 
 ### 定义变量

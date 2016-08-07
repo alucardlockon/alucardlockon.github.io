@@ -1,3 +1,7 @@
+---
+title: 04.node.js笔记
+---
+
 # Node.js
 [教程1](http://www.runoob.com/nodejs/nodejs-tutorial.html)
 [教程2-7天学会node.js](http://nqdeng.github.io/7-days-nodejs/#1.1)

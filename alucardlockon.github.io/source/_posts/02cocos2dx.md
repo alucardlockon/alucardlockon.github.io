@@ -1,3 +1,7 @@
+---
+title: 02.Cocos2dx笔记
+---
+
 # Cocos2dx
  
 [CocosCreator使用手册](http://cocos.com/docs/creator/index.html) 
