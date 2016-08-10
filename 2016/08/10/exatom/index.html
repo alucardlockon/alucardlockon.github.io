@@ -1,0 +1,563 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="ATOM编辑快捷键C-p:上一页C-n:下一页C-f:向前C-b:向后C-a:行首C-e:行尾C-T:交换光标两边字符位置C-G:跳转行号
+首先，Atom自带许多Emacs的快捷键来浏览文档。要想上移或者下移一个字符，你可以 按    C-P    和    C-N    。左移或右移一个字符，按    C-B    和    C-F    。这样等同于按下方向 键，但是一些人不喜欢把他们的手移到">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ATOM使用笔记">
+<meta property="og:url" content="http://yoursite.com/2016/08/10/exatom/index.html">
+<meta property="og:site_name" content="辉大的代码空间">
+<meta property="og:description" content="ATOM编辑快捷键C-p:上一页C-n:下一页C-f:向前C-b:向后C-a:行首C-e:行尾C-T:交换光标两边字符位置C-G:跳转行号
+首先，Atom自带许多Emacs的快捷键来浏览文档。要想上移或者下移一个字符，你可以 按    C-P    和    C-N    。左移或右移一个字符，按    C-B    和    C-F    。这样等同于按下方向 键，但是一些人不喜欢把他们的手移到">
+<meta property="og:updated_time" content="2016-08-10T14:06:18.396Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ATOM使用笔记">
+<meta name="twitter:description" content="ATOM编辑快捷键C-p:上一页C-n:下一页C-f:向前C-b:向后C-a:行首C-e:行尾C-T:交换光标两边字符位置C-G:跳转行号
+首先，Atom自带许多Emacs的快捷键来浏览文档。要想上移或者下移一个字符，你可以 按    C-P    和    C-N    。左移或右移一个字符，按    C-B    和    C-F    。这样等同于按下方向 键，但是一些人不喜欢把他们的手移到">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/08/10/exatom/"/>
+
+  <title> ATOM使用笔记 | 辉大的代码空间 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">辉大的代码空间</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                ATOM使用笔记
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-10T22:06:18+08:00" content="2016-08-10">
+              2016-08-10
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="ATOM"><a href="#ATOM" class="headerlink" title="ATOM"></a>ATOM</h1><h3 id="编辑快捷键"><a href="#编辑快捷键" class="headerlink" title="编辑快捷键"></a>编辑快捷键</h3><p><code>C-p</code>:上一页<br><code>C-n</code>:下一页<br><code>C-f</code>:向前<br><code>C-b</code>:向后<br><code>C-a</code>:行首<br><code>C-e</code>:行尾<br><code>C-T</code>:交换光标两边字符位置<br><code>C-G</code>:跳转行号</p>
+<p>首先，Atom自带许多Emacs的快捷键来浏览文档。要想上移或者下移一个字符，你可以 按    C-P    和    C-N    。左移或右移一个字符，按    C-B    和    C-F    。这样等同于按下方向 键，但是一些人不喜欢把他们的手移到方向键的位置。<br>除了单个字符的移动，还有一些其他的用于移动的快捷键。<br>    <code>alt-B</code>    ,        <code>alt-left</code><br>移动到单词开头。<br>    <code>alt-F</code>    ,        <code>alt-right</code><br>移动到单词末尾。<br>    <code>C-right</code>    ,        <code>C-E</code><br>移动到整行末尾<br>    <code>C-left</code>    ,        <code>C-A</code><br>移动到整行开头<br>    <code>C-up</code><br>移动到文件开头。<br>    <code>C-down</code><br>移动到文件末尾。<br>你也可以使用    C-G    ，通过指定一行（和列）来直接移动光标。这会弹出一个对话框问你想 要跳到哪一行。你同样可以使用    row:column    语法来跳到那一行的某个字符。<br><code>C-R</code>:它会打 开一个列表，包含当前文件中所有的符号，你可以通过    <code>C-t</code>    进行模糊查找。使 用    <code>C-S-r</code>    来查找存在于整个项目中的符号。  </p>
+<p><code>C-K</code>    ,    <code>C-U</code><br>将当前字符转为大写<br><code>C-K</code>    ,    <code>C-L</code><br>将当前字符转为小写</p>
+<h3 id="多重光标"><a href="#多重光标" class="headerlink" title="多重光标"></a>多重光标</h3><p><code>C-A-上</code>,<code>C-A-下</code>:在光标之上或之下添加新的多重光标<br><code>C-D</code>: 选择文档中相同的下一个单词<br><code>A-F3</code>:选择文档中相同的所有单词</p>
+<h3 id="书签"><a href="#书签" class="headerlink" title="书签"></a>书签</h3><p><code>C-F2</code>:查找书签<br><code>A-C-F2</code>:书签<br><code>S-F2</code>:跳到上一个书签<br><code>F2</code>:跳到下一个书签</p>
+<h3 id="行操作"><a href="#行操作" class="headerlink" title="行操作"></a>行操作</h3><p><code>C+上</code>,<code>C+下</code>:上移/下移行<br><code>C+S+K</code>:删除整行<br><code>C+J</code>:合并两行<br><code>C+S+D</code>:复制行</p>
+<h3 id="折叠代码"><a href="#折叠代码" class="headerlink" title="折叠代码"></a>折叠代码</h3><p><code>A+C+[</code>:折叠代码<br><code>A+C+]</code>:展开代码<br><code>A+C+S+[</code>:折叠全部<br><code>A+C+S+]</code>:展开全部  </p>
+<h3 id="窗口快捷键"><a href="#窗口快捷键" class="headerlink" title="窗口快捷键"></a>窗口快捷键</h3><p><code>C-</code>,:设置<br><code>C-S-O</code>:打开目录<br><code>C-\</code>:切换树目录<br><code>C-S-L</code>:选择语法<br><code>C-S-U</code>:选择编码<br><code>C-W</code>:关闭当前缓冲区<br><code>C-S-W</code>    关闭  </p>
+<h3 id="文件查找"><a href="#文件查找" class="headerlink" title="文件查找"></a>文件查找</h3><p><code>C-T</code>或<code>C-P</code>:查找文件(项目目录中所有文件中搜索)<br><code>C-B</code>:只在当前打开的文件中搜索。<br><code>C-S-B</code>:上次git提交添加修改的文件中搜索。</p>
+<blockquote>
+<p>模糊查找工具同时使用    <code>core.ignoredNames</code>    和    <code>fuzzy-finder.ignoredNames</code>    设置，来过滤不显示 的文件和文件夹。如果你的项目中有大量你不想在其中搜索的文件，你可以向这两个设置之 一添加通配符或者目录。</p>
+</blockquote>
+<h3 id="文本选择"><a href="#文本选择" class="headerlink" title="文本选择"></a>文本选择</h3><p>Atom中的文本选择支持很多操作，比如区域选择、缩进和一些查找操作,    以及用引号或者括号 把文字括起来之类的标记操作。<br>选择命令借鉴了很多查找命令。他们实际上具有相同的快捷键，只不过加了个    S    。<br>    <code>C-S-P</code><br>选择当前位置到上一行的相同列<br>    <code>C-S-N</code><br>选择当前位置到下一行的相同列<br>    <code>C-S-B</code><br>选择前一个字符<br>    <code>C-S-F</code><br>选择后一个字符<br>    <code>alt-S-B</code>    ,        <code>alt-S-left</code><br>选择当前位置到单词开头<br>    <code>alt-S-F</code>    ,        <code>alt-S-right</code><br>选择当前位置到单词末尾<br>    <code>C-S-E</code>    ,        <code>C-S-right</code><br>选择当前位置到整行末尾<br>    <code>C-S-A</code>    ,        <code>C-S-left</code><br>选择当前位置到整行开头<br>    <code>C-S-up</code><br>选择当前位置到文件开头<br>    <code>C-S-down</code><br>选择当前位置到文件末尾<br>除了和移动相关的选择命令，还有一些命令可以选择内容的特定区域。<br>    <code>C-A</code><br>选择整个缓冲区<br>Atom飞行手册（中文版）<br>36文 本选择<br>    <code>C-L</code><br>选择整行<br>    <code>C-S-W</code><br>选择当前单词  </p>
+<h3 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h3><p><code>C-F</code>:在缓冲区中查找<br><code>C-S-F</code>:在整个项目中查找  </p>
+<h3 id="括号"><a href="#括号" class="headerlink" title="括号"></a>括号</h3><p><code>C-M</code>:当前匹配的括号。<br><code>C-A-M</code>:选择当前括号中所有文本  </p>
+<h3 id="自动补全"><a href="#自动补全" class="headerlink" title="自动补全"></a>自动补全</h3><p><code>C-SPACE</code> 查看自动补全提示  </p>
+<h3 id="面板"><a href="#面板" class="headerlink" title="面板"></a>面板</h3><p><code>C-K-方向键</code>:在不同面板移动  </p>
+<h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><p><code>A-G    O</code><br>在Github上打开文件。<br><code>alt-G    B</code><br>在Github上打开文件的修改历史。<br><code>alt-G    H</code><br>在Github上打开文件的提交历史。<br><code>alt-G    C</code><br>复制当前文件在Github上的链接。<br><code>alt-G    R</code><br>在Github上进行分支比较。  </p>
+<h3 id="命令行"><a href="#命令行" class="headerlink" title="命令行"></a>命令行</h3><p><code>atom</code> [filename]<br><code>$ apm    help install</code>apm安装帮助<br><code>apm install &lt;package_name&gt;</code>    会安装最新版本。<br><code>apm install &lt;package_name&gt;@&lt;package_version&gt;</code>    会安装指定版本。<br><code>apm search</code> 搜索<br><code>apm view</code>    查看指定包的详细信息  </p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/10/09hadoop/" rel="next" title="09.hadoop笔记">
+                <i class="fa fa-chevron-left"></i> 09.hadoop笔记
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Alucardlockon" />
+          <p class="site-author-name" itemprop="name">Alucardlockon</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ATOM"><span class="nav-number">1.</span> <span class="nav-text">ATOM</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#编辑快捷键"><span class="nav-number">1.0.1.</span> <span class="nav-text">编辑快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多重光标"><span class="nav-number">1.0.2.</span> <span class="nav-text">多重光标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#书签"><span class="nav-number">1.0.3.</span> <span class="nav-text">书签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#行操作"><span class="nav-number">1.0.4.</span> <span class="nav-text">行操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#折叠代码"><span class="nav-number">1.0.5.</span> <span class="nav-text">折叠代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#窗口快捷键"><span class="nav-number">1.0.6.</span> <span class="nav-text">窗口快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件查找"><span class="nav-number">1.0.7.</span> <span class="nav-text">文件查找</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本选择"><span class="nav-number">1.0.8.</span> <span class="nav-text">文本选择</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查找"><span class="nav-number">1.0.9.</span> <span class="nav-text">查找</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#括号"><span class="nav-number">1.0.10.</span> <span class="nav-text">括号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自动补全"><span class="nav-number">1.0.11.</span> <span class="nav-text">自动补全</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#面板"><span class="nav-number">1.0.12.</span> <span class="nav-text">面板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git"><span class="nav-number">1.0.13.</span> <span class="nav-text">Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#命令行"><span class="nav-number">1.0.14.</span> <span class="nav-text">命令行</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Alucardlockon</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

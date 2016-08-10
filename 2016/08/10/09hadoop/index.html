@@ -84,22 +84,22 @@
 
 
 
-<meta name="description" content="Cocos2dxCocosCreator使用手册 
-加载模块12var Monster = require(&quot;Monster&quot;);var monsterComp = monster.getComponent(Monster);
-直接调用12var cardUtils = cc.find(&apos;Canvas/Scripts&apos;).getComponent(&apos;CardUtils&apos;);cardUtils.ad">
+<meta name="description" content="Hadoop课堂笔记HDFS(the Hadoop Distributed File System)具有高性能，容错机制，主从架构，可扩展等特点。组成:NameNode和SecondaryNameNode
+NameNode云数据信息存储，包含:文件存放路径所有者，block名称和路径。  
+SecondaryNameNode定期从NameNode获取信息每小时或100w次提交则执行checkpoi">
 <meta property="og:type" content="article">
-<meta property="og:title" content="02.Cocos2dx笔记">
-<meta property="og:url" content="http://yoursite.com/2016/08/08/02cocos2dx/index.html">
+<meta property="og:title" content="09.hadoop笔记">
+<meta property="og:url" content="http://yoursite.com/2016/08/10/09hadoop/index.html">
 <meta property="og:site_name" content="辉大的代码空间">
-<meta property="og:description" content="Cocos2dxCocosCreator使用手册 
-加载模块12var Monster = require(&quot;Monster&quot;);var monsterComp = monster.getComponent(Monster);
-直接调用12var cardUtils = cc.find(&apos;Canvas/Scripts&apos;).getComponent(&apos;CardUtils&apos;);cardUtils.ad">
-<meta property="og:updated_time" content="2016-08-07T18:56:56.520Z">
+<meta property="og:description" content="Hadoop课堂笔记HDFS(the Hadoop Distributed File System)具有高性能，容错机制，主从架构，可扩展等特点。组成:NameNode和SecondaryNameNode
+NameNode云数据信息存储，包含:文件存放路径所有者，block名称和路径。  
+SecondaryNameNode定期从NameNode获取信息每小时或100w次提交则执行checkpoi">
+<meta property="og:updated_time" content="2016-08-10T14:06:08.491Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="02.Cocos2dx笔记">
-<meta name="twitter:description" content="Cocos2dxCocosCreator使用手册 
-加载模块12var Monster = require(&quot;Monster&quot;);var monsterComp = monster.getComponent(Monster);
-直接调用12var cardUtils = cc.find(&apos;Canvas/Scripts&apos;).getComponent(&apos;CardUtils&apos;);cardUtils.ad">
+<meta name="twitter:title" content="09.hadoop笔记">
+<meta name="twitter:description" content="Hadoop课堂笔记HDFS(the Hadoop Distributed File System)具有高性能，容错机制，主从架构，可扩展等特点。组成:NameNode和SecondaryNameNode
+NameNode云数据信息存储，包含:文件存放路径所有者，block名称和路径。  
+SecondaryNameNode定期从NameNode获取信息每小时或100w次提交则执行checkpoi">
 
 
 
@@ -120,9 +120,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/08/08/02cocos2dx/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/08/10/09hadoop/"/>
 
-  <title> 02.Cocos2dx笔记 | 辉大的代码空间 </title>
+  <title> 09.hadoop笔记 | 辉大的代码空间 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -242,7 +242,7 @@
             
             
               
-                02.Cocos2dx笔记
+                09.hadoop笔记
               
             
           </h1>
@@ -254,8 +254,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-08T02:56:56+08:00" content="2016-08-08">
-              2016-08-08
+            <time itemprop="dateCreated" datetime="2016-08-10T22:06:08+08:00" content="2016-08-10">
+              2016-08-10
             </time>
           </span>
 
@@ -282,9 +282,19 @@
       
 
       
-        <h1 id="Cocos2dx"><a href="#Cocos2dx" class="headerlink" title="Cocos2dx"></a>Cocos2dx</h1><p><a href="http://cocos.com/docs/creator/index.html" target="_blank" rel="external">CocosCreator使用手册</a> </p>
-<h3 id="加载模块"><a href="#加载模块" class="headerlink" title="加载模块"></a>加载模块</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> Monster = <span class="built_in">require</span>(<span class="string">"Monster"</span>);</div><div class="line"><span class="keyword">var</span> monsterComp = monster.getComponent(Monster);</div></pre></td></tr></table></figure>
-<p>直接调用<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> cardUtils = cc.find(<span class="string">'Canvas/Scripts'</span>).getComponent(<span class="string">'CardUtils'</span>);</div><div class="line">cardUtils.addCardToField();</div></pre></td></tr></table></figure></p>
+        <h1 id="Hadoop"><a href="#Hadoop" class="headerlink" title="Hadoop"></a>Hadoop</h1><h3 id="课堂笔记"><a href="#课堂笔记" class="headerlink" title="课堂笔记"></a>课堂笔记</h3><h4 id="HDFS-the-Hadoop-Distributed-File-System"><a href="#HDFS-the-Hadoop-Distributed-File-System" class="headerlink" title="HDFS(the Hadoop Distributed File System)"></a>HDFS(the Hadoop Distributed File System)</h4><p>具有高性能，容错机制，主从架构，可扩展等特点。<br>组成:NameNode和SecondaryNameNode</p>
+<h5 id="NameNode"><a href="#NameNode" class="headerlink" title="NameNode"></a>NameNode</h5><p>云数据信息存储，包含:文件存放路径所有者，block名称和路径。  </p>
+<h5 id="SecondaryNameNode"><a href="#SecondaryNameNode" class="headerlink" title="SecondaryNameNode"></a>SecondaryNameNode</h5><p>定期从NameNode获取信息每小时或100w次提交则执行checkpoint</p>
+<h5 id="HA高可用性"><a href="#HA高可用性" class="headerlink" title="HA高可用性"></a>HA高可用性</h5><p>SecondaryNameNode可在NameNode宕机时接管它  </p>
+<h5 id="联邦-Federaion-模式"><a href="#联邦-Federaion-模式" class="headerlink" title="联邦(Federaion)模式"></a>联邦(Federaion)模式</h5><p>多个独立NameNode,每个NameNode管理namespace的一部分  </p>
+<h5 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h5><p>常用端口:50070<br>命令:hadoop fs -cat/-mkdir/ls/put/rm  </p>
+<h4 id="MapRedurce"><a href="#MapRedurce" class="headerlink" title="MapRedurce"></a>MapRedurce</h4><p>流程检查</p>
+<h4 id="YARN"><a href="#YARN" class="headerlink" title="YARN"></a>YARN</h4><p>作为集群管理平台<br>ResourceManager 作业初始化<br>NodeManager 作业控制<br>JobHistoryManeger 历史信息<br>YARN组成:Container/ApplicationMaster  </p>
+<h4 id="Hbase"><a href="#Hbase" class="headerlink" title="Hbase"></a>Hbase</h4><p>具有高可用性，支持海量数据等特点<br>基于列簇，单行事物，rowkey是唯一索引,支持PB+数据,高吞吐量  </p>
+<h4 id="Hive"><a href="#Hive" class="headerlink" title="Hive"></a>Hive</h4><p>使用Sql查询，可ETL转码文字  </p>
+<h4 id="Impala"><a href="#Impala" class="headerlink" title="Impala"></a>Impala</h4><p>效率高于Hive</p>
+<h4 id="Spark"><a href="#Spark" class="headerlink" title="Spark"></a>Spark</h4><p>大规模数据处理引擎  </p>
+<h4 id="solr"><a href="#solr" class="headerlink" title="solr"></a>solr</h4><p>搜索服务器</p>
 
       
     </div>
@@ -310,16 +320,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/08/08/01python/" rel="next" title="01.Python笔记">
-                <i class="fa fa-chevron-left"></i> 01.Python笔记
+              <a href="/2016/08/08/exmarkdown/" rel="next" title="其他.Markdown笔记">
+                <i class="fa fa-chevron-left"></i> 其他.Markdown笔记
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/08/08/03_1c/" rel="prev" title="03.1.C语言笔记">
-                03.1.C语言笔记 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/08/10/exatom/" rel="prev" title="ATOM使用笔记">
+                ATOM使用笔记 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -420,7 +430,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Cocos2dx"><span class="nav-number">1.</span> <span class="nav-text">Cocos2dx</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#加载模块"><span class="nav-number">1.0.1.</span> <span class="nav-text">加载模块</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hadoop"><span class="nav-number">1.</span> <span class="nav-text">Hadoop</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#课堂笔记"><span class="nav-number">1.0.1.</span> <span class="nav-text">课堂笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#HDFS-the-Hadoop-Distributed-File-System"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">HDFS(the Hadoop Distributed File System)</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#NameNode"><span class="nav-number">1.0.1.1.1.</span> <span class="nav-text">NameNode</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#SecondaryNameNode"><span class="nav-number">1.0.1.1.2.</span> <span class="nav-text">SecondaryNameNode</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#HA高可用性"><span class="nav-number">1.0.1.1.3.</span> <span class="nav-text">HA高可用性</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#联邦-Federaion-模式"><span class="nav-number">1.0.1.1.4.</span> <span class="nav-text">联邦(Federaion)模式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#其他"><span class="nav-number">1.0.1.1.5.</span> <span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#MapRedurce"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">MapRedurce</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#YARN"><span class="nav-number">1.0.1.3.</span> <span class="nav-text">YARN</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hbase"><span class="nav-number">1.0.1.4.</span> <span class="nav-text">Hbase</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hive"><span class="nav-number">1.0.1.5.</span> <span class="nav-text">Hive</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Impala"><span class="nav-number">1.0.1.6.</span> <span class="nav-text">Impala</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Spark"><span class="nav-number">1.0.1.7.</span> <span class="nav-text">Spark</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#solr"><span class="nav-number">1.0.1.8.</span> <span class="nav-text">solr</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
           </div>
         </section>

@@ -235,7 +235,119 @@
             
               
                 
-                <a class="post-title-link" href="/2016/08/08/09hadoop/" itemprop="url">
+                <a class="post-title-link" href="/2016/08/10/exatom/" itemprop="url">
+                  ATOM使用笔记
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-10T22:06:18+08:00" content="2016-08-10">
+              2016-08-10
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="ATOM"><a href="#ATOM" class="headerlink" title="ATOM"></a>ATOM</h1><h3 id="编辑快捷键"><a href="#编辑快捷键" class="headerlink" title="编辑快捷键"></a>编辑快捷键</h3><p><code>C-p</code>:上一页<br><code>C-n</code>:下一页<br><code>C-f</code>:向前<br><code>C-b</code>:向后<br><code>C-a</code>:行首<br><code>C-e</code>:行尾<br><code>C-T</code>:交换光标两边字符位置<br><code>C-G</code>:跳转行号</p>
+<p>首先，Atom自带许多Emacs的快捷键来浏览文档。要想上移或者下移一个字符，你可以 按    C-P    和    C-N    。左移或右移一个字符，按    C-B    和    C-F    。这样等同于按下方向 键，但是一些人不喜欢把他们的手移到方向键的位置。<br>除了单个字符的移动，还有一些其他的用于移动的快捷键。<br>    <code>alt-B</code>    ,        <code>alt-left</code><br>移动到单词开头。<br>    <code>alt-F</code>    ,        <code>alt-right</code><br>移动到单词末尾。<br>    <code>C-right</code>    ,        <code>C-E</code><br>移动到整行末尾<br>    <code>C-left</code>    ,        <code>C-A</code><br>移动到整行开头<br>    <code>C-up</code><br>移动到文件开头。<br>    <code>C-down</code><br>移动到文件末尾。<br>你也可以使用    C-G    ，通过指定一行（和列）来直接移动光标。这会弹出一个对话框问你想 要跳到哪一行。你同样可以使用    row:column    语法来跳到那一行的某个字符。<br><code>C-R</code>:它会打 开一个列表，包含当前文件中所有的符号，你可以通过    <code>C-t</code>    进行模糊查找。使 用    <code>C-S-r</code>    来查找存在于整个项目中的符号。  </p>
+<p><code>C-K</code>    ,    <code>C-U</code><br>将当前字符转为大写<br><code>C-K</code>    ,    <code>C-L</code><br>将当前字符转为小写</p>
+<h3 id="多重光标"><a href="#多重光标" class="headerlink" title="多重光标"></a>多重光标</h3><p><code>C-A-上</code>,<code>C-A-下</code>:在光标之上或之下添加新的多重光标<br><code>C-D</code>: 选择文档中相同的下一个单词<br><code>A-F3</code>:选择文档中相同的所有单词</p>
+<h3 id="书签"><a href="#书签" class="headerlink" title="书签"></a>书签</h3><p><code>C-F2</code>:查找书签<br><code>A-C-F2</code>:书签<br><code>S-F2</code>:跳到上一个书签<br><code>F2</code>:跳到下一个书签</p>
+<h3 id="行操作"><a href="#行操作" class="headerlink" title="行操作"></a>行操作</h3><p><code>C+上</code>,<code>C+下</code>:上移/下移行<br><code>C+S+K</code>:删除整行<br><code>C+J</code>:合并两行<br><code>C+S+D</code>:复制行</p>
+<h3 id="折叠代码"><a href="#折叠代码" class="headerlink" title="折叠代码"></a>折叠代码</h3><p><code>A+C+[</code>:折叠代码<br><code>A+C+]</code>:展开代码<br><code>A+C+S+[</code>:折叠全部<br><code>A+C+S+]</code>:展开全部  </p>
+<h3 id="窗口快捷键"><a href="#窗口快捷键" class="headerlink" title="窗口快捷键"></a>窗口快捷键</h3><p><code>C-</code>,:设置<br><code>C-S-O</code>:打开目录<br><code>C-\</code>:切换树目录<br><code>C-S-L</code>:选择语法<br><code>C-S-U</code>:选择编码<br><code>C-W</code>:关闭当前缓冲区<br><code>C-S-W</code>    关闭  </p>
+<h3 id="文件查找"><a href="#文件查找" class="headerlink" title="文件查找"></a>文件查找</h3><p><code>C-T</code>或<code>C-P</code>:查找文件(项目目录中所有文件中搜索)<br><code>C-B</code>:只在当前打开的文件中搜索。<br><code>C-S-B</code>:上次git提交添加修改的文件中搜索。</p>
+<blockquote>
+<p>模糊查找工具同时使用    <code>core.ignoredNames</code>    和    <code>fuzzy-finder.ignoredNames</code>    设置，来过滤不显示 的文件和文件夹。如果你的项目中有大量你不想在其中搜索的文件，你可以向这两个设置之 一添加通配符或者目录。</p>
+</blockquote>
+<h3 id="文本选择"><a href="#文本选择" class="headerlink" title="文本选择"></a>文本选择</h3><p>Atom中的文本选择支持很多操作，比如区域选择、缩进和一些查找操作,    以及用引号或者括号 把文字括起来之类的标记操作。<br>选择命令借鉴了很多查找命令。他们实际上具有相同的快捷键，只不过加了个    S    。<br>    <code>C-S-P</code><br>选择当前位置到上一行的相同列<br>    <code>C-S-N</code><br>选择当前位置到下一行的相同列<br>    <code>C-S-B</code><br>选择前一个字符<br>    <code>C-S-F</code><br>选择后一个字符<br>    <code>alt-S-B</code>    ,        <code>alt-S-left</code><br>选择当前位置到单词开头<br>    <code>alt-S-F</code>    ,        <code>alt-S-right</code><br>选择当前位置到单词末尾<br>    <code>C-S-E</code>    ,        <code>C-S-right</code><br>选择当前位置到整行末尾<br>    <code>C-S-A</code>    ,        <code>C-S-left</code><br>选择当前位置到整行开头<br>    <code>C-S-up</code><br>选择当前位置到文件开头<br>    <code>C-S-down</code><br>选择当前位置到文件末尾<br>除了和移动相关的选择命令，还有一些命令可以选择内容的特定区域。<br>    <code>C-A</code><br>选择整个缓冲区<br>Atom飞行手册（中文版）<br>36文 本选择<br>    <code>C-L</code><br>选择整行<br>    <code>C-S-W</code><br>选择当前单词  </p>
+<h3 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h3><p><code>C-F</code>:在缓冲区中查找<br><code>C-S-F</code>:在整个项目中查找  </p>
+<h3 id="括号"><a href="#括号" class="headerlink" title="括号"></a>括号</h3><p><code>C-M</code>:当前匹配的括号。<br><code>C-A-M</code>:选择当前括号中所有文本  </p>
+<h3 id="自动补全"><a href="#自动补全" class="headerlink" title="自动补全"></a>自动补全</h3><p><code>C-SPACE</code> 查看自动补全提示  </p>
+<h3 id="面板"><a href="#面板" class="headerlink" title="面板"></a>面板</h3><p><code>C-K-方向键</code>:在不同面板移动  </p>
+<h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><p><code>A-G    O</code><br>在Github上打开文件。<br><code>alt-G    B</code><br>在Github上打开文件的修改历史。<br><code>alt-G    H</code><br>在Github上打开文件的提交历史。<br><code>alt-G    C</code><br>复制当前文件在Github上的链接。<br><code>alt-G    R</code><br>在Github上进行分支比较。  </p>
+<h3 id="命令行"><a href="#命令行" class="headerlink" title="命令行"></a>命令行</h3><p><code>atom</code> [filename]<br><code>$ apm    help install</code>apm安装帮助<br><code>apm install &lt;package_name&gt;</code>    会安装最新版本。<br><code>apm install &lt;package_name&gt;@&lt;package_version&gt;</code>    会安装指定版本。<br><code>apm search</code> 搜索<br><code>apm view</code>    查看指定包的详细信息  </p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/08/10/09hadoop/" itemprop="url">
                   09.hadoop笔记
                 </a>
               
@@ -249,7 +361,113 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-08T02:17:37+08:00" content="2016-08-08">
+            <time itemprop="dateCreated" datetime="2016-08-10T22:06:08+08:00" content="2016-08-10">
+              2016-08-10
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Hadoop"><a href="#Hadoop" class="headerlink" title="Hadoop"></a>Hadoop</h1><h3 id="课堂笔记"><a href="#课堂笔记" class="headerlink" title="课堂笔记"></a>课堂笔记</h3><h4 id="HDFS-the-Hadoop-Distributed-File-System"><a href="#HDFS-the-Hadoop-Distributed-File-System" class="headerlink" title="HDFS(the Hadoop Distributed File System)"></a>HDFS(the Hadoop Distributed File System)</h4><p>具有高性能，容错机制，主从架构，可扩展等特点。<br>组成:NameNode和SecondaryNameNode</p>
+<h5 id="NameNode"><a href="#NameNode" class="headerlink" title="NameNode"></a>NameNode</h5><p>云数据信息存储，包含:文件存放路径所有者，block名称和路径。  </p>
+<h5 id="SecondaryNameNode"><a href="#SecondaryNameNode" class="headerlink" title="SecondaryNameNode"></a>SecondaryNameNode</h5><p>定期从NameNode获取信息每小时或100w次提交则执行checkpoint</p>
+<h5 id="HA高可用性"><a href="#HA高可用性" class="headerlink" title="HA高可用性"></a>HA高可用性</h5><p>SecondaryNameNode可在NameNode宕机时接管它  </p>
+<h5 id="联邦-Federaion-模式"><a href="#联邦-Federaion-模式" class="headerlink" title="联邦(Federaion)模式"></a>联邦(Federaion)模式</h5><p>多个独立NameNode,每个NameNode管理namespace的一部分  </p>
+<h5 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h5><p>常用端口:50070<br>命令:hadoop fs -cat/-mkdir/ls/put/rm  </p>
+<h4 id="MapRedurce"><a href="#MapRedurce" class="headerlink" title="MapRedurce"></a>MapRedurce</h4><p>流程检查</p>
+<h4 id="YARN"><a href="#YARN" class="headerlink" title="YARN"></a>YARN</h4><p>作为集群管理平台<br>ResourceManager 作业初始化<br>NodeManager 作业控制<br>JobHistoryManeger 历史信息<br>YARN组成:Container/ApplicationMaster  </p>
+<h4 id="Hbase"><a href="#Hbase" class="headerlink" title="Hbase"></a>Hbase</h4><p>具有高可用性，支持海量数据等特点<br>基于列簇，单行事物，rowkey是唯一索引,支持PB+数据,高吞吐量  </p>
+<h4 id="Hive"><a href="#Hive" class="headerlink" title="Hive"></a>Hive</h4><p>使用Sql查询，可ETL转码文字  </p>
+<h4 id="Impala"><a href="#Impala" class="headerlink" title="Impala"></a>Impala</h4><p>效率高于Hive</p>
+<h4 id="Spark"><a href="#Spark" class="headerlink" title="Spark"></a>Spark</h4><p>大规模数据处理引擎  </p>
+<h4 id="solr"><a href="#solr" class="headerlink" title="solr"></a>solr</h4><p>搜索服务器</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/08/08/exmarkdown/" itemprop="url">
+                  其他.Markdown笔记
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-08T02:56:56+08:00" content="2016-08-08">
               2016-08-08
             </time>
           </span>
@@ -279,20 +497,245 @@
       
         
           
-            <h1 id="Hadoop"><a href="#Hadoop" class="headerlink" title="Hadoop"></a>Hadoop</h1><p>###课堂笔记</p>
-<h4 id="HDFS-the-Hadoop-Distributed-File-System"><a href="#HDFS-the-Hadoop-Distributed-File-System" class="headerlink" title="HDFS(the Hadoop Distributed File System)"></a>HDFS(the Hadoop Distributed File System)</h4><p>具有高性能，容错机制，主从架构，可扩展等特点。<br>组成:NameNode和SecondaryNameNode</p>
-<h5 id="NameNode"><a href="#NameNode" class="headerlink" title="NameNode"></a>NameNode</h5><p>云数据信息存储，包含:文件存放路径所有者，block名称和路径。  </p>
-<h5 id="SecondaryNameNode"><a href="#SecondaryNameNode" class="headerlink" title="SecondaryNameNode"></a>SecondaryNameNode</h5><p>定期从NameNode获取信息每小时或100w次提交则执行checkpoint</p>
-<h5 id="HA高可用性"><a href="#HA高可用性" class="headerlink" title="HA高可用性"></a>HA高可用性</h5><p>SecondaryNameNode可在NameNode宕机时接管它  </p>
-<h5 id="联邦-Federaion-模式"><a href="#联邦-Federaion-模式" class="headerlink" title="联邦(Federaion)模式"></a>联邦(Federaion)模式</h5><p>多个独立NameNode,每个NameNode管理namespace的一部分  </p>
-<h5 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h5><p>常用端口:50070<br>命令:hadoop fs -cat/-mkdir/ls/put/rm  </p>
-<h4 id="MapRedurce"><a href="#MapRedurce" class="headerlink" title="MapRedurce"></a>MapRedurce</h4><p>流程检查</p>
-<h4 id="YARN"><a href="#YARN" class="headerlink" title="YARN"></a>YARN</h4><p>作为集群管理平台<br>ResourceManager 作业初始化<br>NodeManager 作业控制<br>JobHistoryManeger 历史信息<br>YARN组成:Container/ApplicationMaster  </p>
-<h4 id="Hbase"><a href="#Hbase" class="headerlink" title="Hbase"></a>Hbase</h4><p>具有高可用性，支持海量数据等特点<br>基于列簇，单行事物，rowkey是唯一索引,支持PB+数据,高吞吐量  </p>
-<h4 id="Hive"><a href="#Hive" class="headerlink" title="Hive"></a>Hive</h4><p>使用Sql查询，可ETL转码文字  </p>
-<h4 id="Impala"><a href="#Impala" class="headerlink" title="Impala"></a>Impala</h4><p>效率高于Hive</p>
-<h4 id="Spark"><a href="#Spark" class="headerlink" title="Spark"></a>Spark</h4><p>大规模数据处理引擎  </p>
-<h4 id="solr"><a href="#solr" class="headerlink" title="solr"></a>solr</h4><p>搜索服务器</p>
+            <h1 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h1><p><a href="http://www.appinn.com/markdown/" target="_blank" rel="external">中文手册</a></p>
+<h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><p><code># //一级标题</code><br><code>###### //六级标题</code></p>
+<h4 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h4><blockquote>
+<p>to py or not to py,this is a question</p>
+<blockquote>
+<p>–by ywh  </p>
+</blockquote>
+</blockquote>
+<h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><ul>
+<li>name</li>
+<li>sex</li>
+</ul>
+<ul>
+<li>a</li>
+<li>b</li>
+</ul>
+<ul>
+<li>d</li>
+<li>c  </li>
+</ul>
+<ol>
+<li>a</li>
+<li>c  </li>
+</ol>
+<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><p><code>code here</code><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">func</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  alert(<span class="number">1</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h4 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h4><hr>
+<hr>
+<hr>
+<hr>
+<h4 id="链接-图片"><a href="#链接-图片" class="headerlink" title="链接/图片"></a>链接/图片</h4><p><a href="www.github.com">LInk</a><br><img src="https://avatars0.githubusercontent.com/u/3635420?v=3&amp;s=460" alt="Pic"></p>
+<h4 id="强调-粗体"><a href="#强调-粗体" class="headerlink" title="强调/粗体"></a>强调/粗体</h4><p><em>Yeah</em><br><strong>Yeah</strong>  </p>
+<h4 id="反斜杠"><a href="#反斜杠" class="headerlink" title="反斜杠"></a>反斜杠</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">\   反斜线</div><div class="line">`   反引号</div><div class="line">*   星号</div><div class="line">_   底线</div><div class="line">&#123;&#125;  花括号</div><div class="line">[]  方括号</div><div class="line">()  括弧</div><div class="line">#   井字号</div><div class="line">+   加号</div><div class="line">-   减号</div><div class="line">.   英文句点</div><div class="line">!   惊叹号</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/08/08/exemacs/" itemprop="url">
+                  其他.Emacs笔记
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-08T02:56:56+08:00" content="2016-08-08">
+              2016-08-08
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="EMACS"><a href="#EMACS" class="headerlink" title="EMACS"></a>EMACS</h1><h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><p>C-p:上一页<br>C-n:下一页<br>C-f:向前<br>C-n:向后<br>C-a:行首<br>C-e:行尾<br>C-@:mark<br>C-w:移除mark文字<br>C-k:移除整行,再次按下移除换行符  </p>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>命令后加数字多数是重复执行命令:C-20-n 下20行<br>终止结果:C-g  </p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/08/08/12数据结构/" itemprop="url">
+                  12.数据结构笔记
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-08T02:56:56+08:00" content="2016-08-08">
+              2016-08-08
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><blockquote>
+<p>程序设计=数据结构+算法 </p>
+</blockquote>
+<h3 id="逻辑机构和物理结构"><a href="#逻辑机构和物理结构" class="headerlink" title="逻辑机构和物理结构"></a>逻辑机构和物理结构</h3><p>传统上，我们把数据结构分为逻辑机构和物理结构。<br>逻辑结构:是指数据对象中数据元素之间的相互关系。<br>物理结构:是指数据的逻辑结构在计算机中的存储形式。 </p>
+<h4 id="四大逻辑结构"><a href="#四大逻辑结构" class="headerlink" title="四大逻辑结构"></a>四大逻辑结构</h4><h5 id="集合结构"><a href="#集合结构" class="headerlink" title="集合结构"></a>集合结构</h5><p>没有不三不四的关系</p>
+<h5 id="线性结构"><a href="#线性结构" class="headerlink" title="线性结构"></a>线性结构</h5><p>一对一</p>
+<h5 id="树形结构"><a href="#树形结构" class="headerlink" title="树形结构"></a>树形结构</h5><p>一对多的层次关系</p>
+<h5 id="图形结构"><a href="#图形结构" class="headerlink" title="图形结构"></a>图形结构</h5><p>多对多的关系</p>
+<h4 id="物理结构"><a href="#物理结构" class="headerlink" title="物理结构"></a>物理结构</h4><p>顺序存储:把数据元素存放在地址连续的存储单元里<br>链式存储:把数据元素存放在任意的存储单元里，这些存储单元可以是连续的，也可以是不连续的。 </p>
+<h3 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h3><p>输入:算法具有零个或多个输入<br>输出:至少有一个或多个输出 </p>
+<p>有穷性:<br>算法在执行有限的步骤之后，自动结束<br>确定性:<br>算法的每个步骤都有确定的含义，有唯一的输出结构，每个步骤都应该明确不能有歧义 </p>
+<p>算法不是唯一的，同一个问题，可以有多种解决问题的算法。 </p>
+<h4 id="正确性"><a href="#正确性" class="headerlink" title="正确性"></a>正确性</h4><ul>
+<li>程序没有语法错误</li>
+<li>算法程序对于合法输入能够产生满足要求的输出</li>
+<li>算法程序对于非法输入能够产生满足规格的说明 </li>
+<li>算法程序对于故意刁难的测试输入都有满足要求的输出结果(高阶) </li>
+</ul>
+<p>可读性:<br>便于阅读，理解和交流<br>健壮性:<br>输入数据不合法时，能做出相关处理<br>时间效率高和存储量低:</p>
 
           
         
@@ -356,7 +799,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-08T02:17:37+08:00" content="2016-08-08">
+            <time itemprop="dateCreated" datetime="2016-08-08T02:56:56+08:00" content="2016-08-08">
               2016-08-08
             </time>
           </span>
@@ -452,7 +895,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-08T02:17:37+08:00" content="2016-08-08">
+            <time itemprop="dateCreated" datetime="2016-08-08T02:56:56+08:00" content="2016-08-08">
               2016-08-08
             </time>
           </span>
@@ -608,7 +1051,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-08T02:17:37+08:00" content="2016-08-08">
+            <time itemprop="dateCreated" datetime="2016-08-08T02:56:56+08:00" content="2016-08-08">
               2016-08-08
             </time>
           </span>
@@ -743,7 +1186,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-08T02:17:37+08:00" content="2016-08-08">
+            <time itemprop="dateCreated" datetime="2016-08-08T02:56:56+08:00" content="2016-08-08">
               2016-08-08
             </time>
           </span>
@@ -888,7 +1331,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-08T02:17:37+08:00" content="2016-08-08">
+            <time itemprop="dateCreated" datetime="2016-08-08T02:56:56+08:00" content="2016-08-08">
               2016-08-08
             </time>
           </span>
@@ -921,427 +1364,6 @@
             <h1 id="Cocos2dx"><a href="#Cocos2dx" class="headerlink" title="Cocos2dx"></a>Cocos2dx</h1><p><a href="http://cocos.com/docs/creator/index.html" target="_blank" rel="external">CocosCreator使用手册</a> </p>
 <h3 id="加载模块"><a href="#加载模块" class="headerlink" title="加载模块"></a>加载模块</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> Monster = <span class="built_in">require</span>(<span class="string">"Monster"</span>);</div><div class="line"><span class="keyword">var</span> monsterComp = monster.getComponent(Monster);</div></pre></td></tr></table></figure>
 <p>直接调用<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> cardUtils = cc.find(<span class="string">'Canvas/Scripts'</span>).getComponent(<span class="string">'CardUtils'</span>);</div><div class="line">cardUtils.addCardToField();</div></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/08/01python/" itemprop="url">
-                  01.Python笔记
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-08T02:17:37+08:00" content="2016-08-08">
-              2016-08-08
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><h3 id="定义变量"><a href="#定义变量" class="headerlink" title="定义变量"></a>定义变量</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">a=<span class="number">1</span> <span class="comment">#整形 长整形</span></div><div class="line">a=<span class="number">1.2</span>,b=<span class="number">2E-10</span> <span class="comment">#浮点</span></div><div class="line">b=<span class="string">'String'</span>,b=<span class="string">u"str"</span> <span class="comment">#字符串 ,unicode字符</span></div><div class="line">c=[<span class="number">1</span>,<span class="number">2</span>] <span class="comment">#列表</span></div><div class="line">d=(‘a’,<span class="string">'c'</span>) <span class="comment">#元组</span></div><div class="line">e=&#123;<span class="string">"a"</span>:<span class="number">1</span>,<span class="string">"b"</span>:<span class="number">2</span>&#125; <span class="comment">#字典</span></div></pre></td></tr></table></figure>
-<h3 id="定义方法"><a href="#定义方法" class="headerlink" title="定义方法"></a>定义方法</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">a</span><span class="params">()</span>:</span></div><div class="line">  <span class="comment">#方法体</span></div></pre></td></tr></table></figure>
-<h3 id="if-while-for"><a href="#if-while-for" class="headerlink" title="if/while/for"></a>if/while/for</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#if</span></div><div class="line"><span class="keyword">if</span> a==<span class="number">1</span>:</div><div class="line">  <span class="keyword">print</span> <span class="number">1</span></div><div class="line"><span class="keyword">elif</span> a==<span class="number">2</span>:</div><div class="line">  <span class="keyword">print</span> <span class="number">2</span></div><div class="line"><span class="keyword">else</span>:</div><div class="line">  <span class="keyword">print</span> <span class="number">3</span></div><div class="line"></div><div class="line"><span class="comment">#while</span></div><div class="line"><span class="keyword">while</span> <span class="number">1</span>:</div><div class="line">  <span class="keyword">pass</span></div><div class="line"></div><div class="line"><span class="comment">#for 打印0-5</span></div><div class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,<span class="number">6</span>):</div><div class="line">  <span class="keyword">print</span> i</div><div class="line"><span class="keyword">else</span></div><div class="line">  <span class="keyword">pass</span></div></pre></td></tr></table></figure>
-<h3 id="模块导入"><a href="#模块导入" class="headerlink" title="模块导入"></a>模块导入</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span></div><div class="line"><span class="keyword">from</span> 模块 <span class="keyword">import</span> 变量</div></pre></td></tr></table></figure>
-<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">l=[<span class="number">1</span>,<span class="number">2</span>]</div><div class="line">l.append(<span class="number">3</span>) <span class="comment">#添加元素</span></div><div class="line">l.insert(<span class="number">1</span>,<span class="number">3</span>) <span class="comment">#在位置1添加3</span></div><div class="line">l.count(<span class="number">1</span>) <span class="comment">#count个数</span></div><div class="line">l.index(<span class="number">2</span>) <span class="comment">#返回2出现的第一个的位置</span></div><div class="line">l.pop(<span class="number">1</span>) <span class="comment">#删除(返回删除的值)</span></div><div class="line">l.remove(<span class="number">1</span>) <span class="comment">#删除</span></div><div class="line">l.extend([<span class="number">3</span>,<span class="number">4</span>]) <span class="comment">#在列表l中添加列表[3,4]</span></div><div class="line">l.reverse() <span class="comment">#反转列表</span></div></pre></td></tr></table></figure>
-<h3 id="元组和list转换"><a href="#元组和list转换" class="headerlink" title="元组和list转换"></a>元组和list转换</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">tuple(lis)</div><div class="line">list(tem)</div></pre></td></tr></table></figure>
-<h3 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">f=open(<span class="string">""</span>,<span class="string">"w"</span>) <span class="comment">#w写,r读取,a追加</span></div><div class="line">f.write(<span class="string">"py大法好"</span>) <span class="comment">#写文件</span></div><div class="line">f.close()</div></pre></td></tr></table></figure>
-<h3 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">try</span>:</div><div class="line">  <span class="keyword">pass</span></div><div class="line"><span class="keyword">except</span> SomeException,e:</div><div class="line">  <span class="keyword">print</span> <span class="string">"wrong!"</span></div><div class="line"><span class="keyword">except</span>:</div><div class="line">  <span class="keyword">print</span> <span class="string">"wrong else!"</span></div></pre></td></tr></table></figure>
-<h3 id="Python运算符"><a href="#Python运算符" class="headerlink" title="Python运算符"></a>Python运算符</h3><p><strong>  幂 3</strong>3<br>/   除<br>//  整除<br>%   取模<br>&amp; |   按位与/或<br>^ ~   按位异或 5^3=6/翻转x的按位翻转-(x+1)</p>
-<h3 id="Python库"><a href="#Python库" class="headerlink" title="Python库"></a>Python库</h3><h4 id="sys-包含系统相关功能"><a href="#sys-包含系统相关功能" class="headerlink" title="sys 包含系统相关功能"></a>sys 包含系统相关功能</h4><p>sys.platform 平台类型<br>sys.modules 载入的模块</p>
-<h3 id="其他语句"><a href="#其他语句" class="headerlink" title="其他语句"></a>其他语句</h3><h4 id="exec-‘print-“abc”‘"><a href="#exec-‘print-“abc”‘" class="headerlink" title="exec ‘print “abc”‘"></a>exec ‘print “abc”‘</h4><p>exec语句用来执行储存在字符串或文件中的Python语句；eval语句用来计算存储在字符串中的有效Python表达式。  </p>
-<h4 id="assert-a-true"><a href="#assert-a-true" class="headerlink" title="assert a==true"></a>assert a==true</h4><p>assert语句用来断言某个条件是真的，并且在它非真的时候引发一个错误–AssertionError。</p>
-<h4 id="eval"><a href="#eval" class="headerlink" title="eval"></a>eval</h4><p>eval语句用来计算存储在字符串中的有效Python表达式。  </p>
-<h4 id="lambda-a-2-a-2"><a href="#lambda-a-2-a-2" class="headerlink" title="lambda a:2+a*2"></a>lambda a:2+a*2</h4><p>lambda语句被用来创建新的函数对象，并在运行时返回它们。lambda需要一个参数，后面仅跟单个表达式作为函数体，而表达式的值被这个新建的函数返回。 注意，即便是print语句也不能用在lambda形式中，只能使用表达式。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">lam1=<span class="keyword">lambda</span> a,b:a+b*b</div><div class="line"><span class="keyword">print</span> lam1(<span class="number">1</span>,<span class="number">2</span>)</div></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/08/exmarkdown/" itemprop="url">
-                  其他.Markdown笔记
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-08T02:17:37+08:00" content="2016-08-08">
-              2016-08-08
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h1><p><a href="http://www.appinn.com/markdown/" target="_blank" rel="external">中文手册</a></p>
-<h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><p><code># //一级标题</code><br><code>###### //六级标题</code></p>
-<h4 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h4><blockquote>
-<p>to py or not to py,this is a question</p>
-<blockquote>
-<p>–by ywh  </p>
-</blockquote>
-</blockquote>
-<h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><ul>
-<li>name</li>
-<li>sex</li>
-</ul>
-<ul>
-<li>a</li>
-<li>b</li>
-</ul>
-<ul>
-<li>d</li>
-<li>c  </li>
-</ul>
-<ol>
-<li>a</li>
-<li>c  </li>
-</ol>
-<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><p><code>code here</code><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">func</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  alert(<span class="number">1</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<h4 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h4><hr>
-<hr>
-<hr>
-<hr>
-<h4 id="链接-图片"><a href="#链接-图片" class="headerlink" title="链接/图片"></a>链接/图片</h4><p><a href="www.github.com">LInk</a><br><img src="https://avatars0.githubusercontent.com/u/3635420?v=3&amp;s=460" alt="Pic"></p>
-<h4 id="强调-粗体"><a href="#强调-粗体" class="headerlink" title="强调/粗体"></a>强调/粗体</h4><p><em>Yeah</em><br><strong>Yeah</strong>  </p>
-<h4 id="反斜杠"><a href="#反斜杠" class="headerlink" title="反斜杠"></a>反斜杠</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">\   反斜线</div><div class="line">`   反引号</div><div class="line">*   星号</div><div class="line">_   底线</div><div class="line">&#123;&#125;  花括号</div><div class="line">[]  方括号</div><div class="line">()  括弧</div><div class="line">#   井字号</div><div class="line">+   加号</div><div class="line">-   减号</div><div class="line">.   英文句点</div><div class="line">!   惊叹号</div></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/08/exemacs/" itemprop="url">
-                  其他.Emacs笔记
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-08T02:17:37+08:00" content="2016-08-08">
-              2016-08-08
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="EMACS"><a href="#EMACS" class="headerlink" title="EMACS"></a>EMACS</h1><h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><p>C-p:上一页<br>C-n:下一页<br>C-f:向前<br>C-n:向后<br>C-a:行首<br>C-e:行尾<br>C-@:mark<br>C-w:移除mark文字<br>C-k:移除整行,再次按下移除换行符  </p>
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>命令后加数字多数是重复执行命令:C-20-n 下20行<br>终止结果:C-g  </p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/08/exatom/" itemprop="url">
-                  其他.ATOM笔记
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-08T02:17:37+08:00" content="2016-08-08">
-              2016-08-08
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="ATOM"><a href="#ATOM" class="headerlink" title="ATOM"></a>ATOM</h1><h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><p>C-p:上一页<br>C-n:下一页<br>C-f:向前<br>C-n:向后<br>C-a:行首<br>C-e:行尾  </p>
 
           
         

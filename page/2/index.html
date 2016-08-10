@@ -235,8 +235,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/08/08/12数据结构/" itemprop="url">
-                  12.数据结构笔记
+                <a class="post-title-link" href="/2016/08/08/01python/" itemprop="url">
+                  01.Python笔记
                 </a>
               
             
@@ -249,7 +249,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-08T02:17:37+08:00" content="2016-08-08">
+            <time itemprop="dateCreated" datetime="2016-08-08T02:56:56+08:00" content="2016-08-08">
               2016-08-08
             </time>
           </span>
@@ -279,25 +279,20 @@
       
         
           
-            <h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><blockquote>
-<p>程序设计=数据结构+算法 </p>
-</blockquote>
-<h3 id="逻辑机构和物理结构"><a href="#逻辑机构和物理结构" class="headerlink" title="逻辑机构和物理结构"></a>逻辑机构和物理结构</h3><p>传统上，我们把数据结构分为逻辑机构和物理结构。<br>逻辑结构:是指数据对象中数据元素之间的相互关系。<br>物理结构:是指数据的逻辑结构在计算机中的存储形式。 </p>
-<h4 id="四大逻辑结构"><a href="#四大逻辑结构" class="headerlink" title="四大逻辑结构"></a>四大逻辑结构</h4><h5 id="集合结构"><a href="#集合结构" class="headerlink" title="集合结构"></a>集合结构</h5><p>没有不三不四的关系</p>
-<h5 id="线性结构"><a href="#线性结构" class="headerlink" title="线性结构"></a>线性结构</h5><p>一对一</p>
-<h5 id="树形结构"><a href="#树形结构" class="headerlink" title="树形结构"></a>树形结构</h5><p>一对多的层次关系</p>
-<h5 id="图形结构"><a href="#图形结构" class="headerlink" title="图形结构"></a>图形结构</h5><p>多对多的关系</p>
-<h4 id="物理结构"><a href="#物理结构" class="headerlink" title="物理结构"></a>物理结构</h4><p>顺序存储:把数据元素存放在地址连续的存储单元里<br>链式存储:把数据元素存放在任意的存储单元里，这些存储单元可以是连续的，也可以是不连续的。 </p>
-<h3 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h3><p>输入:算法具有零个或多个输入<br>输出:至少有一个或多个输出 </p>
-<p>有穷性:<br>算法在执行有限的步骤之后，自动结束<br>确定性:<br>算法的每个步骤都有确定的含义，有唯一的输出结构，每个步骤都应该明确不能有歧义 </p>
-<p>算法不是唯一的，同一个问题，可以有多种解决问题的算法。 </p>
-<h4 id="正确性"><a href="#正确性" class="headerlink" title="正确性"></a>正确性</h4><ul>
-<li>程序没有语法错误</li>
-<li>算法程序对于合法输入能够产生满足要求的输出</li>
-<li>算法程序对于非法输入能够产生满足规格的说明 </li>
-<li>算法程序对于故意刁难的测试输入都有满足要求的输出结果(高阶) </li>
-</ul>
-<p>可读性:<br>便于阅读，理解和交流<br>健壮性:<br>输入数据不合法时，能做出相关处理<br>时间效率高和存储量低:</p>
+            <h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><h3 id="定义变量"><a href="#定义变量" class="headerlink" title="定义变量"></a>定义变量</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">a=<span class="number">1</span> <span class="comment">#整形 长整形</span></div><div class="line">a=<span class="number">1.2</span>,b=<span class="number">2E-10</span> <span class="comment">#浮点</span></div><div class="line">b=<span class="string">'String'</span>,b=<span class="string">u"str"</span> <span class="comment">#字符串 ,unicode字符</span></div><div class="line">c=[<span class="number">1</span>,<span class="number">2</span>] <span class="comment">#列表</span></div><div class="line">d=(‘a’,<span class="string">'c'</span>) <span class="comment">#元组</span></div><div class="line">e=&#123;<span class="string">"a"</span>:<span class="number">1</span>,<span class="string">"b"</span>:<span class="number">2</span>&#125; <span class="comment">#字典</span></div></pre></td></tr></table></figure>
+<h3 id="定义方法"><a href="#定义方法" class="headerlink" title="定义方法"></a>定义方法</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">a</span><span class="params">()</span>:</span></div><div class="line">  <span class="comment">#方法体</span></div></pre></td></tr></table></figure>
+<h3 id="if-while-for"><a href="#if-while-for" class="headerlink" title="if/while/for"></a>if/while/for</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#if</span></div><div class="line"><span class="keyword">if</span> a==<span class="number">1</span>:</div><div class="line">  <span class="keyword">print</span> <span class="number">1</span></div><div class="line"><span class="keyword">elif</span> a==<span class="number">2</span>:</div><div class="line">  <span class="keyword">print</span> <span class="number">2</span></div><div class="line"><span class="keyword">else</span>:</div><div class="line">  <span class="keyword">print</span> <span class="number">3</span></div><div class="line"></div><div class="line"><span class="comment">#while</span></div><div class="line"><span class="keyword">while</span> <span class="number">1</span>:</div><div class="line">  <span class="keyword">pass</span></div><div class="line"></div><div class="line"><span class="comment">#for 打印0-5</span></div><div class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,<span class="number">6</span>):</div><div class="line">  <span class="keyword">print</span> i</div><div class="line"><span class="keyword">else</span></div><div class="line">  <span class="keyword">pass</span></div></pre></td></tr></table></figure>
+<h3 id="模块导入"><a href="#模块导入" class="headerlink" title="模块导入"></a>模块导入</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span></div><div class="line"><span class="keyword">from</span> 模块 <span class="keyword">import</span> 变量</div></pre></td></tr></table></figure>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">l=[<span class="number">1</span>,<span class="number">2</span>]</div><div class="line">l.append(<span class="number">3</span>) <span class="comment">#添加元素</span></div><div class="line">l.insert(<span class="number">1</span>,<span class="number">3</span>) <span class="comment">#在位置1添加3</span></div><div class="line">l.count(<span class="number">1</span>) <span class="comment">#count个数</span></div><div class="line">l.index(<span class="number">2</span>) <span class="comment">#返回2出现的第一个的位置</span></div><div class="line">l.pop(<span class="number">1</span>) <span class="comment">#删除(返回删除的值)</span></div><div class="line">l.remove(<span class="number">1</span>) <span class="comment">#删除</span></div><div class="line">l.extend([<span class="number">3</span>,<span class="number">4</span>]) <span class="comment">#在列表l中添加列表[3,4]</span></div><div class="line">l.reverse() <span class="comment">#反转列表</span></div></pre></td></tr></table></figure>
+<h3 id="元组和list转换"><a href="#元组和list转换" class="headerlink" title="元组和list转换"></a>元组和list转换</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">tuple(lis)</div><div class="line">list(tem)</div></pre></td></tr></table></figure>
+<h3 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">f=open(<span class="string">""</span>,<span class="string">"w"</span>) <span class="comment">#w写,r读取,a追加</span></div><div class="line">f.write(<span class="string">"py大法好"</span>) <span class="comment">#写文件</span></div><div class="line">f.close()</div></pre></td></tr></table></figure>
+<h3 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">try</span>:</div><div class="line">  <span class="keyword">pass</span></div><div class="line"><span class="keyword">except</span> SomeException,e:</div><div class="line">  <span class="keyword">print</span> <span class="string">"wrong!"</span></div><div class="line"><span class="keyword">except</span>:</div><div class="line">  <span class="keyword">print</span> <span class="string">"wrong else!"</span></div></pre></td></tr></table></figure>
+<h3 id="Python运算符"><a href="#Python运算符" class="headerlink" title="Python运算符"></a>Python运算符</h3><p><strong>  幂 3</strong>3<br>/   除<br>//  整除<br>%   取模<br>&amp; |   按位与/或<br>^ ~   按位异或 5^3=6/翻转x的按位翻转-(x+1)</p>
+<h3 id="Python库"><a href="#Python库" class="headerlink" title="Python库"></a>Python库</h3><h4 id="sys-包含系统相关功能"><a href="#sys-包含系统相关功能" class="headerlink" title="sys 包含系统相关功能"></a>sys 包含系统相关功能</h4><p>sys.platform 平台类型<br>sys.modules 载入的模块</p>
+<h3 id="其他语句"><a href="#其他语句" class="headerlink" title="其他语句"></a>其他语句</h3><h4 id="exec-‘print-“abc”‘"><a href="#exec-‘print-“abc”‘" class="headerlink" title="exec ‘print “abc”‘"></a>exec ‘print “abc”‘</h4><p>exec语句用来执行储存在字符串或文件中的Python语句；eval语句用来计算存储在字符串中的有效Python表达式。  </p>
+<h4 id="assert-a-true"><a href="#assert-a-true" class="headerlink" title="assert a==true"></a>assert a==true</h4><p>assert语句用来断言某个条件是真的，并且在它非真的时候引发一个错误–AssertionError。</p>
+<h4 id="eval"><a href="#eval" class="headerlink" title="eval"></a>eval</h4><p>eval语句用来计算存储在字符串中的有效Python表达式。  </p>
+<h4 id="lambda-a-2-a-2"><a href="#lambda-a-2-a-2" class="headerlink" title="lambda a:2+a*2"></a>lambda a:2+a*2</h4><p>lambda语句被用来创建新的函数对象，并在运行时返回它们。lambda需要一个参数，后面仅跟单个表达式作为函数体，而表达式的值被这个新建的函数返回。 注意，即便是print语句也不能用在lambda形式中，只能使用表达式。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">lam1=<span class="keyword">lambda</span> a,b:a+b*b</div><div class="line"><span class="keyword">print</span> lam1(<span class="number">1</span>,<span class="number">2</span>)</div></pre></td></tr></table></figure></p>
 
           
         
